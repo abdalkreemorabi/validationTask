@@ -10,12 +10,13 @@ class TransactionValidator():
         
     def validator(self):
         transactionFactory = TransactionFactory()
-        source = transactionFactory.createInstance(self.type, self.input) 
-        source.convertToObject()
-        return source.validate()
+        source = transactionFactory.createInstance(self.type, self.input)
+        while(source):
+          source.convertToObject()
+          return source.validate()
 
 
-test1=TransactionValidator("Xml","transaction.xml")
+test1=TransactionValidator("Json","transaction.json")
 test1.validator()
 
 
