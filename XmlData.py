@@ -34,12 +34,12 @@ class XmlData:
             print("The net sale retrieved from Json file =" , netSale)
             print("The net sale calculated from this program =" , netSaleCalculated)     
             if netSaleCalculated != int(netSale):
-                return("The net sale calculated is not equal to the net sale retrieved from XML file")
+                return print("The net sale calculated is /NOT\ equal to the net sale retrieved from XML file")
 
         except:
             print("Invalid data type")
             return False
         
-        return("The net sale calculated is equal to the net sale retrieved from XML file")
+        return print("The net sale calculated is equal to the net sale retrieved from XML file")
 
 
