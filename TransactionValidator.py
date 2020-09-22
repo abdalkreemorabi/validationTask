@@ -16,8 +16,6 @@ class TransactionValidator():
           return source.validate()
 
 
-test1=TransactionValidator("Json","transaction.json")
-test1.validator()
 
 
 
